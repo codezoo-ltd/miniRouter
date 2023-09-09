@@ -1,0 +1,6 @@
+[submodule "rpirtscts"]
+	path = rpirtscts
+	url = https://github.com/codezoo-ltd/rpirtscts.git
+[submodule "WiringPi"]
+	path = WiringPi
+	url = https://github.com/WiringPi/WiringPi.git
