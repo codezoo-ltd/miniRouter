@@ -17,10 +17,15 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-/home/jbmaster/rpirtscts/rpirtscts on
+rpirtscts on
 sleep 3
 pon vodafone-Type1SC
 sleep 3
 iptables-restore < /etc/iptables.ipv4.nat
+sleep 1
+route del default
+sleep 1
+route add default gw 10.0.0.1
+sleep 1
 
 exit 0
